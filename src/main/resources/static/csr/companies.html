@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Companies - Insurance Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="companies.js" type="application/javascript"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./companies.html">Companies</a></li>
+            <li><a href="./customers.html">Customers</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
+    <h2>Manage Companies</h2>
+    <form id="companyForm">
+        <input type="hidden" name="id" />
+        <label for="nameInput">Name</label>
+        <input type="text" name="name" id="nameInput" required>
+        <label for="addressInput">Address</label>
+        <input type="text" name="address" id="addressInput">
+        <label for="emailInput">Email</label>
+        <input type="email" name="email" id="emailInput">
+        <input type="submit" value="Save" />
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="companyDisplay">
+            <tr>
+                <td colspan="4">Loading...</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

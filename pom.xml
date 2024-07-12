@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ch.axa.its</groupId>
-	<artifactId>punchclock</artifactId>
+	<artifactId>SpringbootProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>punchclock</name>
+	<name>SpringbootProject</name>
 	<description>Demo project for Spring Boot</description>
 	<licenses>
 		<license/>
@@ -37,6 +37,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependencies>
+    <!-- ... andere Abhängigkeiten ... -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.33</version>
+    </dependency>
+    <!-- ... andere Abhängigkeiten ... -->
+</dependencies>
+
 
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>

@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Entries - Punchclock Client</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="entries.js" type="application/javascript"></script>
-    </head>
-    <body>
-        <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insurance Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        /* Additional styles specific to index.html */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .intro {
+            margin-bottom: 20px;
+        }
+        .intro p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./companies.html">Companies</a></li>
+            <li><a href="./customers.html">Customers</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Welcome to Insurance Management System</h2>
+        <div class="intro">
+            <p>This system allows you to manage insurance-related entities:</p>
             <ul>
-                <li><a href="./index.html">Entries</a></li>
-                <li><a href="./categories.html">Categories</a></li>
-                <li><a href="./tags.html">Tags</a></li>
+                <li><a href="./companies.html">Manage Companies</a></li>
+                <li><a href="./customers.html">Manage Customers</a></li>
             </ul>
-        </nav>
-        <h2>Manage entries</h2>
-        <form id="entryForm">
-            <input type="hidden" name="id" />
-            <label for="categorySelect">Category</label>
-            <select name="category" id="categorySelect" required>
-                <option disabled>No categories</option>
-            </select>
-            <label for="tagsSelect">Tags</label>
-            <div id="tagsSelect">No tags</div>
-            <label for="checkInInput">Check in</label>
-            <input type="date" name="checkInDate" id="checkInInput" required>
-            <input type="time" name="checkInTime" required>
-            <label for="checkOutInput">Check out</label>
-            <input type="date" name="checkOutDate" id="checkOutInput" required>
-            <input type="time" name="checkOutTime" required>
-            <label for="descriptionInput">Description</label>
-            <textarea name="description" id="descriptionInput"></textarea>
-            <input type="submit" value="Save" />
-        </form>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Category</th>
-                    <th>Tags</th>
-                    <th>Check in</th>
-                    <th>Check out</th>
-                    <th>Description</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="entryDisplay">
-                <tr>
-                    <td colspan="3">Loading...</td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+        </div>
+        <p>You can navigate using the links above.</p>
+    </div>
+</body>
 </html>
